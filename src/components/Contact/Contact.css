@@ -1,0 +1,124 @@
+.contact-form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15rem;
+    width: 68%;  
+    height: 100vh;  
+}
+.contact_options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.contact_option {
+    padding: 0.1rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: 0.9s;
+    background: linear-gradient(180deg, #00C6FB 26.71%, #005BEA 99.36%);
+    box-shadow: 0px 2px 3px 2px rgba(38, 248, 238, 0.644);
+    color: white;
+}
+
+.contact_option:hover{
+    background: transparent;
+    background: white;
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.contact_option-icon{
+    font-size: 1.3rem;
+    margin-bottom: -1rem;
+}
+
+.contact_option  h4 {
+    margin-bottom: -1rem;
+    
+}
+.contact_option  h5 {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+.heading{
+    text-align: center;
+    margin-top: 8rem;
+
+}
+.contact_option a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 0.2rem;
+    transition: 0.9s;
+
+
+}
+
+.contact_option:hover a{
+    background: white;
+    cursor: pointer;
+    color: var(--orange);
+}
+.c-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.c-right>form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    
+}
+
+.c-right .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3em;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;   
+}
+
+textarea{
+    height: 4rem!important;
+}
+
+.c-blur1{
+    top: 1rem;
+    left: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+   
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        gap: 8rem;
+        display: inline;
+        padding: 0;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+    .c-right .user{
+        width: 16rem;
+    }
+    .c-right{
+        margin-top: 2rem;
+        display: flex;
+    }
+
+
+   
+}   
