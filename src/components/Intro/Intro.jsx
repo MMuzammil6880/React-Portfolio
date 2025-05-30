@@ -32,7 +32,7 @@ const Intro = () => {
           <span>Muhammad Muzammil</span>
           <span>
             DevOps Engineer with a high level of experience in web design
-            and development, producing the Quality work
+            and development, producing Quality work. Testing CICD.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
